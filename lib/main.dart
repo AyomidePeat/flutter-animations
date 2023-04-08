@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/animations/animatedalign.dart';
+import 'package:flutter_animations/animations/button_animation.dart';
+import 'package:flutter_animations/animations/tween_animation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,13 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-       
-        primarySwatch: Colors.blue,
-      ),
-      home: const AnimatedAlignAnimation()
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const TweenAnimation());
   }
 }
- 

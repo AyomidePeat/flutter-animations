@@ -16,12 +16,13 @@ class _AnimatedBuilderAnimationState extends State<AnimatedBuilderAnimation>
     vsync: this,
   )..repeat();
 
+  
+  @override
   void dispose() {
     _controller.dispose();
     super.dispose();
   }
-
-  @override
+ @override
   Widget build(BuildContext context) {
     return Center(
         child: AnimatedBuilder(
